@@ -5,22 +5,22 @@ import androidx.lifecycle.viewModelScope
 import com.inforizz.webviewandroid.core.domain.usercase.GetScreenStateUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-
-class ScreenStateViewModel(
-    private val getScreenStateUseCase: GetScreenStateUseCase
-) : ViewModel() {
+class ScreenStateViewModel(private val getScreenStateUseCase: GetScreenStateUseCase) : ViewModel() {
     private val _screenIsFlutter = MutableStateFlow(false)
     val screenIsFlutter: StateFlow<Boolean> get() = _screenIsFlutter
 
     init {
-        fetchScreenState()
+        observeScreenState()
     }
 
-    private fun fetchScreenState() {
+    private fun observeScreenState() {
         viewModelScope.launch {
-            _screenIsFlutter.value = getScreenStateUseCase.execute()
+            getScreenStateUseCase.execute().collectLatest { screenIsFlutter ->
+                _screenIsFlutter.value = screenIsFlutter
+            }
         }
     }
 }

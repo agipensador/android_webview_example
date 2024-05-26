@@ -1,5 +1,7 @@
 package com.inforizz.webviewandroid.core.domain.repository
 
+import kotlinx.coroutines.flow.Flow
+
 interface ScreenStateRepository {
-    suspend fun getScreenState(): Boolean
+    fun observeScreenState(): Flow<Boolean>
 }
