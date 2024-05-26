@@ -1,12 +1,6 @@
-package com.inforizz.webviewandroid.core.presentation.screens
-
 import android.annotation.SuppressLint
-import android.graphics.Bitmap
 import android.graphics.Color.parseColor
-import android.util.Log
-import android.webkit.ConsoleMessage
 import android.webkit.WebChromeClient
-import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Toast
@@ -34,24 +28,39 @@ fun WebViewScreen(navController: NavController, url: String, colorHex: String) {
     val context = LocalContext.current
     var isLoading by remember { mutableStateOf(true) }
 
-    val webView = remember { WebView(context).apply {
-        webViewClient = WebViewClient()
-        webChromeClient = WebChromeClient()
-        loadUrl(url)
-    }}
+    val webView = remember {
+        WebView(context).apply {
+            webViewClient = WebViewClient()
+            webChromeClient = object : WebChromeClient() {
+                override fun onProgressChanged(view: WebView?, newProgress: Int) {
+                    super.onProgressChanged(view, newProgress)
+                    isLoading = newProgress < 100
+                }
+            }
+            settings.javaScriptEnabled = true
+            settings.domStorageEnabled = true
+            loadUrl(url)
+        }
+    }
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text(text = "Android WebView", color = Color.White) },
-                colors =  TopAppBarDefaults.topAppBarColors(containerColor = Color(parseColor(colorHex)))
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = Color(
+                        parseColor(
+                            colorHex
+                        )
+                    )
+                )
             )
         },
         bottomBar = {
             BottomAppBar(
                 containerColor = Color(parseColor(colorHex)),
                 content = {
-                    IconButton(onClick = { navController.navigate("home") }) {
+                    IconButton(onClick = { navController.popBackStack() }) {
                         Icon(Icons.Filled.Home, contentDescription = "Home", tint = Color.White)
                     }
                     Spacer(modifier = Modifier.weight(1f))
@@ -59,68 +68,51 @@ fun WebViewScreen(navController: NavController, url: String, colorHex: String) {
                         if (webView.canGoBack()) {
                             webView.goBack()
                         } else {
-                            Toast.makeText(context, "Não há páginas para voltar", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                context,
+                                "Não há páginas para voltar",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Voltar", tint = Color.White)
+                        Icon(
+                            Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = "Voltar",
+                            tint = Color.White
+                        )
                     }
                     IconButton(onClick = {
                         if (webView.canGoForward()) {
                             webView.goForward()
                         } else {
-                            Toast.makeText(context, "Não há páginas adiante", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, "Não há páginas adiante", Toast.LENGTH_SHORT)
+                                .show()
                         }
                     }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "Avançar", tint = Color.White)
+                        Icon(
+                            Icons.AutoMirrored.Filled.ArrowForward,
+                            contentDescription = "Avançar",
+                            tint = Color.White
+                        )
                     }
                     IconButton(onClick = { webView.reload() }) {
-                        Icon(Icons.Filled.Refresh, contentDescription = "Reload", tint = Color.White)
+                        Icon(
+                            Icons.Filled.Refresh,
+                            contentDescription = "Reload",
+                            tint = Color.White
+                        )
                     }
                 }
             )
         },
         content = { paddingValues ->
-            Box(modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues)
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(paddingValues)
             ) {
                 AndroidView(
-                    factory = { context ->
-                        webView.apply {
-                            webViewClient = object : WebViewClient() {
-                                override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-                                    super.onPageStarted(view, url, favicon)
-                                    isLoading = true
-                                }
-
-                                override fun onPageFinished(view: WebView?, url: String?) {
-                                    super.onPageFinished(view, url)
-                                    isLoading = false
-                                }
-
-                                override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
-                                    view?.loadUrl(request?.url.toString())
-                                    return true
-                                }
-                            }
-                            webChromeClient = object : WebChromeClient() {
-                                override fun onConsoleMessage(consoleMessage: ConsoleMessage?): Boolean {
-                                    consoleMessage?.let {
-                                        Log.d("WebView", "${it.message()} -- From line ${it.lineNumber()} of ${it.sourceId()}")
-                                    }
-                                    return super.onConsoleMessage(consoleMessage)
-                                }
-                            }
-                            settings.apply {
-                                javaScriptEnabled = true
-                                domStorageEnabled = true
-                            }
-                            loadUrl(url)
-                        }
-                    },
-                    update = { webView ->
-                        webView.loadUrl(url)
-                    },
+                    factory = { webView },
                     modifier = Modifier.fillMaxSize()
                 )
 
@@ -137,8 +129,14 @@ fun WebViewScreen(navController: NavController, url: String, colorHex: String) {
         }
     )
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(url) {
         snapshotFlow { webView.canGoBack() }.collect { canGoBack = it }
         snapshotFlow { webView.canGoForward() }.collect { canGoForward = it }
+    }
+
+    DisposableEffect(Unit) {
+        onDispose {
+            webView.destroy()
+        }
     }
 }

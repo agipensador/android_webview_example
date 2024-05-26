@@ -2,6 +2,7 @@
 
 package com.inforizz.webviewandroid
 
+import WebViewScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,13 +13,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
-import com.google.accompanist.insets.ProvideWindowInsets
 import com.inforizz.webviewandroid.core.data.datasource.FirestoreDataSource
 import com.inforizz.webviewandroid.core.data.repository.FirestoreRepository
 import com.inforizz.webviewandroid.core.domain.usercase.GetScreenStateUseCase
 import com.inforizz.webviewandroid.core.presentation.screens.FlutterScreen
 import com.inforizz.webviewandroid.core.presentation.screens.HomeScreen
-import com.inforizz.webviewandroid.core.presentation.screens.WebViewScreen
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModel
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModelFactory
 
@@ -61,11 +60,8 @@ class MainActivity : ComponentActivity() {
                 ) { backStackEntry ->
                     val url = backStackEntry.arguments?.getString("url") ?: ""
                     val colorHex = backStackEntry.arguments?.getString("color") ?: "#FFFFFF"
-                    setContent {
-                        ProvideWindowInsets {
-                            WebViewScreen(navController = navController, url = url, colorHex = colorHex)
-                        }
-                    }
+
+                    WebViewScreen(navController = navController, url = url, colorHex = colorHex)
 
                 }
             }
