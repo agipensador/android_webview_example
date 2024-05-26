@@ -40,9 +40,9 @@ fun HomeScreen() {
         Button(
             onClick = { /* Open WebView with URL */ },
             colors = ButtonDefaults.buttonColors(containerColor = Color(
-                red = Color.Green.red * 0.8f,
-                green = Color.Green.green * 0.8f,
-                blue = Color.Green.blue * 0.8f
+                red = Color.Green.red * 0.7f,
+                green = Color.Green.green * 0.7f,
+                blue = Color.Green.blue * 0.7f
             )),
             modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)
         ) {
