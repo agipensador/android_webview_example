@@ -11,17 +11,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.google.accompanist.web.WebView
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(navController: NavHostController) {
     Column(
         modifier = Modifier.fillMaxSize().padding(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Button(
-            onClick = { /* Open WebView with URL */ },
+            onClick = { navController.navigate("webview/https://www.uol.com.br/") },
             colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
             modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)
         ) {
@@ -29,7 +30,7 @@ fun HomeScreen() {
         }
 
         Button(
-            onClick = { /* Open WebView with URL */ },
+            onClick = {navController.navigate("webview/https://emergencia.paraquemdoar.com.br/?ref=home_banner?utm_source=pirulito&utm_medium=home&utm_campaign=homeg1#doacao") },
             colors = ButtonDefaults.buttonColors(containerColor = Color.Magenta),
             modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)
 
@@ -38,7 +39,7 @@ fun HomeScreen() {
         }
 
         Button(
-            onClick = { /* Open WebView with URL */ },
+            onClick = { navController.navigate("webview/https://www.uol.com.br/esporte/")  },
             colors = ButtonDefaults.buttonColors(containerColor = Color(
                 red = Color.Green.red * 0.7f,
                 green = Color.Green.green * 0.7f,
