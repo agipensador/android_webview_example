@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WebView Android</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_screen_state">ScreenState</string>
+    <string name="title_activity_get_screen_state_use_case">GetScreenStateUseCase</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main_activitynplk">MainActivitynplk</string>
+    <string name="title_activity_aaaa">Aaaa</string>
+    <string name="title_activity_main_activity2k">MainActivity2k</string>
+    <string name="title_activity_flutter_screen">FlutterScreen</string>
+</resources>
