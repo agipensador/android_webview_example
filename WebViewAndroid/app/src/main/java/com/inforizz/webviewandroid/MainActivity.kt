@@ -1,15 +1,18 @@
+@file:Suppress("DEPRECATION")
+
 package com.inforizz.webviewandroid
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
+import androidx.navigation.NavType
+import androidx.navigation.compose.*
+import androidx.navigation.navArgument
+import com.google.accompanist.insets.ProvideWindowInsets
 import com.inforizz.webviewandroid.core.data.datasource.FirestoreDataSource
 import com.inforizz.webviewandroid.core.data.repository.FirestoreRepository
 import com.inforizz.webviewandroid.core.domain.usercase.GetScreenStateUseCase
@@ -19,7 +22,7 @@ import com.inforizz.webviewandroid.core.presentation.screens.WebViewScreen
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModel
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModelFactory
 
-
+@ExperimentalMaterial3Api
 class MainActivity : ComponentActivity() {
     private lateinit var viewModel: ScreenStateViewModel
 
@@ -39,16 +42,31 @@ class MainActivity : ComponentActivity() {
             val navController = rememberNavController()
             val screenIsFlutter by viewModel.screenIsFlutter.collectAsState()
 
-            NavHost(navController = navController, startDestination = if (screenIsFlutter) "flutter" else "home") {
-                composable("home") {
+            NavHost(
+                navController = navController,
+                startDestination = if (screenIsFlutter) "flutter" else "home"
+            ) {
+                composable(route = "home") {
                     HomeScreen(navController = navController)
                 }
-                composable("flutter") {
+                composable(route = "flutter") {
                     FlutterScreen(screenIsFlutter)
                 }
-                composable("webview/{url}") { backStackEntry ->
+                composable(
+                    route = "webView/{url}/{color}",
+                    arguments = listOf(
+                        navArgument("url") { type = NavType.StringType },
+                        navArgument("color") { type = NavType.StringType }
+                    )
+                ) { backStackEntry ->
                     val url = backStackEntry.arguments?.getString("url") ?: ""
-                    WebViewScreen(url = url)
+                    val colorHex = backStackEntry.arguments?.getString("color") ?: "#FFFFFF"
+                    setContent {
+                        ProvideWindowInsets {
+                            WebViewScreen(navController = navController, url = url, colorHex = colorHex)
+                        }
+                    }
+
                 }
             }
         }

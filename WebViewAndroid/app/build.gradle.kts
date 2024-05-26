@@ -76,6 +76,10 @@ dependencies {
     implementation(libs.ui)
     implementation(libs.ui.tooling.preview)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.compose.v240alpha10)
+
+    //insets
+    implementation(libs.accompanist.insets)
 
     //webView
     implementation(libs.accompanist.webview)

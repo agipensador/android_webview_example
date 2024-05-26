@@ -1,4 +1,5 @@
 [versions]
+accompanistInsets = "0.24.13-rc"
 accompanistWebview = "0.31.1-alpha"
 agp = "8.3.1"
 converterGson = "2.9.0"
@@ -20,10 +21,12 @@ material3 = "1.2.1"
 material3Android = "1.2.1"
 firebaseFirestoreKtx = "25.0.0"
 navigationCompose = "2.6.0"
+navigationComposeVersion = "2.4.0-alpha10"
 ui = "1.4.3"
 uiToolingPreview = "1.4.3"
 
 [libraries]
+accompanist-insets = { module = "com.google.accompanist:accompanist-insets", version.ref = "accompanistInsets" }
 accompanist-webview = { module = "com.google.accompanist:accompanist-webview", version.ref = "accompanistWebview" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-ktx-v1101 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
@@ -31,6 +34,7 @@ androidx-lifecycle-runtime-ktx-v251 = { module = "androidx.lifecycle:lifecycle-r
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-navigation-compose-v240alpha10 = { module = "androidx.navigation:navigation-compose", version.ref = "navigationComposeVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore-ktx-v2451 = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtxVersion" }
