@@ -24,6 +24,7 @@ navigationCompose = "2.6.0"
 navigationComposeVersion = "2.4.0-alpha10"
 ui = "1.4.3"
 uiToolingPreview = "1.4.3"
+navigationRuntimeKtx = "2.7.7"
 
 [libraries]
 accompanist-insets = { module = "com.google.accompanist:accompanist-insets", version.ref = "accompanistInsets" }
@@ -57,6 +58,7 @@ androidx-material3-android = { group = "androidx.compose.material3", name = "mat
 firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
 ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
 ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
