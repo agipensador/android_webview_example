@@ -1,0 +1,8 @@
+android.libraryVariants.all { variant ->
+    def name = variant.name.capitalize()
+    def taskName = "assemble${name}"
+
+    tasks.named(taskName) {
+        dependsOn(":app_flutter_module:assemble${name}Debug")
+    }
+}
