@@ -1,5 +1,5 @@
-name: flutter_module
-description: "A new Flutter module project."
+name: android_webview_example
+description: "A new Flutter project."
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -83,5 +83,5 @@ flutter:
   # identifiers, which may be completely independent or the same as these.
   module:
     androidX: true
-    androidPackage: com.inforizz.flutter_module
-    iosBundleIdentifier: com.inforizz.flutterModule
+    androidPackage: com.inforizz.android_webview_example
+    iosBundleIdentifier: com.inforizz.androidWebviewExample
