@@ -98,10 +98,4 @@ dependencies {
     //runtime
     implementation(libs.androidx.lifecycle.runtime.ktx.v251)
 
-    //retrofit2
-    implementation(libs.retrofit)
-
-    //gson
-    implementation(libs.converter.gson)
-
 }
