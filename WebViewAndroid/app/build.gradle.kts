@@ -64,6 +64,8 @@ dependencies {
     implementation(libs.androidx.material3.android)
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.runner)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -97,5 +99,7 @@ dependencies {
 
     //runtime
     implementation(libs.androidx.lifecycle.runtime.ktx.v251)
+
+
 
 }

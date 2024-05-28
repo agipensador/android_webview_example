@@ -28,13 +28,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // dependências
         val dataSource = FirestoreDataSource()
         val repository = FirestoreRepository(dataSource)
         val getScreenStateUseCase = GetScreenStateUseCase(repository)
         val viewModelFactory = ScreenStateViewModelFactory(getScreenStateUseCase)
 
-        // Instanciando o ViewModel com o ViewModelFactory
         viewModel = ViewModelProvider(this, viewModelFactory)[ScreenStateViewModel::class.java]
 
         setContent {
