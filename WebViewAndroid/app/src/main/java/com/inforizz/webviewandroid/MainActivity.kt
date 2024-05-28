@@ -2,6 +2,7 @@
 
 package com.inforizz.webviewandroid
 
+import FlutterScreen
 import WebViewScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,12 +12,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavType
-import androidx.navigation.compose.*
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.inforizz.webviewandroid.core.data.datasource.FirestoreDataSource
 import com.inforizz.webviewandroid.core.data.repository.FirestoreRepository
 import com.inforizz.webviewandroid.core.domain.usercase.GetScreenStateUseCase
-import com.inforizz.webviewandroid.core.presentation.screens.FlutterScreen
 import com.inforizz.webviewandroid.core.presentation.screens.HomeScreen
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModel
 import com.inforizz.webviewandroid.core.presentation.viewmodel.ScreenStateViewModelFactory
@@ -49,7 +51,7 @@ class MainActivity : ComponentActivity() {
                     HomeScreen(navController = navController)
                 }
                 composable(route = "flutter") {
-                    FlutterScreen(screenIsFlutter)
+                    FlutterScreen(navController = navController, url = "previous-quince.surge.sh")
                 }
                 composable(
                     route = "webView/{url}/{color}",

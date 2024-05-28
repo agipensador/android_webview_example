@@ -25,7 +25,7 @@ fun HomeScreen(navController: NavHostController) {
         ButtonData(
             text = "Notícias",
             color = Color(0xFF800000),
-            url = "previous-quince.surge.sh"
+            url = "https://g1.globo.com/"
         ),
         ButtonData(
             text = "Ajude o RS",
