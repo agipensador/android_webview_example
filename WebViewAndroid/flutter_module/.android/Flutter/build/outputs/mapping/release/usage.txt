@@ -1,0 +1,1 @@
+com.inforizz.flutter_module.BuildConfig

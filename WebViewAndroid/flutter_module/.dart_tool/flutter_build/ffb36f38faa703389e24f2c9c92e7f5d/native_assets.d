@@ -1,0 +1,1 @@
+ /Users/gi/development/android_webview_example/webViewAndroid/flutter_module/.dart_tool/flutter_build/ffb36f38faa703389e24f2c9c92e7f5d/native_assets.yaml: 
