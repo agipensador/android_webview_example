@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package com.inforizz.webviewandroid
 
 import FlutterScreen
@@ -37,7 +35,7 @@ class MainActivity : ComponentActivity() {
         val viewModelFactory = ScreenStateViewModelFactory(getScreenStateUseCase)
 
         // Instanciando o ViewModel com o ViewModelFactory
-        viewModel = ViewModelProvider(this, viewModelFactory).get(ScreenStateViewModel::class.java)
+        viewModel = ViewModelProvider(this, viewModelFactory)[ScreenStateViewModel::class.java]
 
         setContent {
             val navController = rememberNavController()
@@ -51,7 +49,7 @@ class MainActivity : ComponentActivity() {
                     HomeScreen(navController = navController)
                 }
                 composable(route = "flutter") {
-                    FlutterScreen(navController = navController, url = "previous-quince.surge.sh")
+                    FlutterScreen(url = "previous-quince.surge.sh")
                 }
                 composable(
                     route = "webView/{url}/{color}",
