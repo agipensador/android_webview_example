@@ -6,6 +6,8 @@ converterGson = "2.9.0"
 coreKtxVersion = "1.10.1"
 firebaseBom = "33.0.0"
 firebaseFirestoreKtxVersion = "24.5.1"
+flutter_release = "1.0"
+flutter_debug = "1.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -39,6 +41,8 @@ androidx-navigation-compose-v240alpha10 = { module = "androidx.navigation:naviga
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore-ktx-v2451 = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtxVersion" }
+flutter_release = { module = "com.inforizz:flutter_release", version.ref = "flutter_release" }
+flutter_debug = { module = "com.inforizz:flutter_debug", version.ref = "flutter_debug" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

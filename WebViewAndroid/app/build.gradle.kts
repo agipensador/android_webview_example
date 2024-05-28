@@ -98,4 +98,13 @@ dependencies {
     //runtime
     implementation(libs.androidx.lifecycle.runtime.ktx.v251)
 
+    // Dependência de debug
+    debugImplementation("com.inforizz:flutter_debug:1.0")
+
+    // Dependência de release
+    releaseImplementation("com.inforizz:flutter_release:1.0")
+
+    // Dependência de profile
+    create("profileImplementation", "com.inforizz:flutter_profile:1.0")
+
 }
