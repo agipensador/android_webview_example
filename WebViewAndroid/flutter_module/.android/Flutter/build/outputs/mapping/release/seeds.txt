@@ -1,0 +1,253 @@
+io.flutter.plugins.GeneratedPluginRegistrant
+com.inforizz.flutter_module.R$styleable
+com.inforizz.flutter_module.R$drawable
+com.inforizz.flutter_module.R$id
+com.inforizz.flutter_module.R$color
+com.inforizz.flutter_module.R$dimen
+com.inforizz.flutter_module.R$string
+com.inforizz.flutter_module.R$attr
+com.inforizz.flutter_module.R$integer
+com.inforizz.flutter_module.R
+com.inforizz.flutter_module.R$layout
+com.inforizz.flutter_module.R$style
+com.inforizz.flutter_module.R$styleable: int SplitPairFilter_secondaryActivityName
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_type
+com.inforizz.flutter_module.R$dimen: int compat_button_padding_horizontal_material
+com.inforizz.flutter_module.R$id: int notification_main_column
+com.inforizz.flutter_module.R$drawable: int notification_action_background
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderAuthority
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_26
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_13
+com.inforizz.flutter_module.R$attr: int fontProviderAuthority
+com.inforizz.flutter_module.R$style: int TextAppearance_Compat_Notification_Line2
+com.inforizz.flutter_module.R$attr: int splitMinWidth
+com.inforizz.flutter_module.R$styleable: int[] SplitPairRule
+com.inforizz.flutter_module.R$dimen: int notification_action_icon_size
+com.inforizz.flutter_module.R$id: int async
+com.inforizz.flutter_module.R$attr: int secondaryActivityName
+com.inforizz.flutter_module.R$layout: int notification_action_tombstone
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_24
+com.inforizz.flutter_module.R$id: int notification_background
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_18
+com.inforizz.flutter_module.R$id: int locale
+com.inforizz.flutter_module.R$attr: int splitRatio
+com.inforizz.flutter_module.R$dimen: int notification_media_narrow_margin
+com.inforizz.flutter_module.R$attr: int activityName
+com.inforizz.flutter_module.R$attr: int queryPatterns
+com.inforizz.flutter_module.R$attr: int splitMinSmallestWidth
+com.inforizz.flutter_module.R$id: int tag_accessibility_heading
+com.inforizz.flutter_module.R$id: int text2
+com.inforizz.flutter_module.R$attr: int font
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_4
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderFetchStrategy
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_21
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_9
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_splitMinWidth
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_8
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_endY
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_3
+com.inforizz.flutter_module.R$drawable: int notify_panel_notification_icon_bg
+com.inforizz.flutter_module.R$id: int right_side
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_android_fontVariationSettings
+com.inforizz.flutter_module.R$attr: int alwaysExpand
+com.inforizz.flutter_module.R$styleable: int Capability_queryPatterns
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_android_font
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_fontStyle
+com.inforizz.flutter_module.R$styleable: int SplitPlaceholderRule_placeholderActivityName
+com.inforizz.flutter_module.R$attr: int finishPrimaryWithSecondary
+com.inforizz.flutter_module.R$attr: int fontProviderFetchTimeout
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_gradientRadius
+com.inforizz.flutter_module.R$drawable: int notification_template_icon_bg
+com.inforizz.flutter_module.R$drawable: int notification_tile_bg
+com.inforizz.flutter_module.R$dimen: int notification_top_pad_large_text
+io.flutter.plugins.GeneratedPluginRegistrant: java.lang.String TAG
+com.inforizz.flutter_module.R$attr: int shortcutMatchRequired
+com.inforizz.flutter_module.R$id: int accessibility_action_clickable_span
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_7
+com.inforizz.flutter_module.R$id: int right_icon
+com.inforizz.flutter_module.R$id: int tag_on_receive_content_listener
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_11
+com.inforizz.flutter_module.R$id: int info
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_31
+com.inforizz.flutter_module.R$color: int notification_icon_bg_color
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_10
+com.inforizz.flutter_module.R$styleable: int[] FontFamily
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderQuery
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_centerX
+com.inforizz.flutter_module.R$id: int normal
+com.inforizz.flutter_module.R$id: int tag_accessibility_actions
+com.inforizz.flutter_module.R$attr: int fontWeight
+com.inforizz.flutter_module.R$styleable: int SplitPairFilter_secondaryActivityAction
+com.inforizz.flutter_module.R$id: int androidx_window_activity_scope
+com.inforizz.flutter_module.R$styleable: int[] ActivityRule
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_tileMode
+com.inforizz.flutter_module.R$styleable: int SplitPlaceholderRule_splitMinWidth
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_splitMinSmallestWidth
+com.inforizz.flutter_module.R$dimen: int notification_large_icon_width
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_6
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_startX
+com.inforizz.flutter_module.R$dimen: int notification_action_text_size
+com.inforizz.flutter_module.R$id: int line1
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_finishSecondaryWithPrimary
+com.inforizz.flutter_module.R$id: int tag_accessibility_clickable_spans
+com.inforizz.flutter_module.R$style: int TextAppearance_Compat_Notification_Title
+com.inforizz.flutter_module.R$layout: int custom_dialog
+com.inforizz.flutter_module.R$drawable: int notification_bg
+com.inforizz.flutter_module.R$attr: int fontStyle
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_endColor
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_16
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_endX
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_0
+com.inforizz.flutter_module.R$dimen: int compat_notification_large_icon_max_width
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_12
+com.inforizz.flutter_module.R$styleable: int ColorStateListItem_alpha
+com.inforizz.flutter_module.R$id: int chronometer
+com.inforizz.flutter_module.R$id: int icon
+com.inforizz.flutter_module.R$drawable: int notification_bg_normal
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_14
+com.inforizz.flutter_module.R$dimen: int notification_large_icon_height
+com.inforizz.flutter_module.R$attr: int alpha
+com.inforizz.flutter_module.R$id: int icon_group
+com.inforizz.flutter_module.R$id: int italic
+com.inforizz.flutter_module.R$drawable: int notification_bg_low_normal
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_15
+com.inforizz.flutter_module.R$dimen: int notification_subtext_size
+com.inforizz.flutter_module.R$styleable: int GradientColorItem_android_color
+com.inforizz.flutter_module.R$styleable: int SplitPlaceholderRule_splitMinSmallestWidth
+com.inforizz.flutter_module.R$style: int Widget_Compat_NotificationActionText
+com.inforizz.flutter_module.R$id: int time
+com.inforizz.flutter_module.R$styleable: int ActivityFilter_activityAction
+com.inforizz.flutter_module.R$styleable: int[] SplitPairFilter
+com.inforizz.flutter_module.R$id: int tag_accessibility_pane_title
+com.inforizz.flutter_module.R$id: int tag_unhandled_key_event_manager
+com.inforizz.flutter_module.R$attr: int activityAction
+com.inforizz.flutter_module.R$id: int tag_screen_reader_focusable
+com.inforizz.flutter_module.R$dimen: int notification_big_circle_margin
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_finishPrimaryWithSecondary
+com.inforizz.flutter_module.R$styleable: int[] SplitPlaceholderRule
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderSystemFontFamily
+com.inforizz.flutter_module.R$attr: int primaryActivityName
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderFetchTimeout
+com.inforizz.flutter_module.R$styleable: int[] ColorStateListItem
+com.inforizz.flutter_module.R$attr: int finishSecondaryWithPrimary
+com.inforizz.flutter_module.R$id: int actions
+com.inforizz.flutter_module.R$layout: int notification_template_icon_group
+com.inforizz.flutter_module.R$id: int tag_on_apply_window_listener
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_centerY
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_2
+com.inforizz.flutter_module.R$id: int title
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_20
+com.inforizz.flutter_module.R$drawable: int notification_bg_normal_pressed
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_23
+com.inforizz.flutter_module.R$attr: int fontProviderCerts
+com.inforizz.flutter_module.R$id: int line3
+com.inforizz.flutter_module.R$layout: int notification_action
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_splitLayoutDirection
+com.inforizz.flutter_module.R$attr: int fontProviderSystemFontFamily
+com.inforizz.flutter_module.R$layout: int notification_template_part_time
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderCerts
+com.inforizz.flutter_module.R$id: int tag_window_insets_animation_callback
+com.inforizz.flutter_module.R$styleable: int[] GradientColor
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_fontVariationSettings
+com.inforizz.flutter_module.R$dimen: int notification_small_icon_size_as_large
+com.inforizz.flutter_module.R$dimen: int compat_button_padding_vertical_material
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_5
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_startY
+com.inforizz.flutter_module.R$id: int tag_on_receive_content_mime_types
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_font
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_fontWeight
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_19
+com.inforizz.flutter_module.R$color: int notification_action_color_filter
+com.inforizz.flutter_module.R$attr: int fontProviderFetchStrategy
+com.inforizz.flutter_module.R$styleable: int[] GradientColorItem
+com.inforizz.flutter_module.R$style: int TextAppearance_Compat_Notification
+com.inforizz.flutter_module.R$color: int androidx_core_ripple_material_light
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_clearTop
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_ttcIndex
+com.inforizz.flutter_module.R$id: int dialog_button
+com.inforizz.flutter_module.R$id: int action_image
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_29
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_android_fontStyle
+com.inforizz.flutter_module.R$styleable: int SplitPlaceholderRule_splitLayoutDirection
+com.inforizz.flutter_module.R$drawable: int notification_icon_background
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_1
+com.inforizz.flutter_module.R$id: int action_divider
+com.inforizz.flutter_module.R$attr: int nestedScrollViewStyle
+com.inforizz.flutter_module.R$id: int blocking
+com.inforizz.flutter_module.R$id: int text
+com.inforizz.flutter_module.R$dimen: int notification_right_icon_size
+com.inforizz.flutter_module.R$color: int androidx_core_secondary_text_default_material_light
+com.inforizz.flutter_module.R$attr: int fontVariationSettings
+com.inforizz.flutter_module.R$styleable: int[] ActivityFilter
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_17
+com.inforizz.flutter_module.R$dimen: int compat_control_corner_material
+com.inforizz.flutter_module.R$styleable: int SplitPairFilter_primaryActivityName
+com.inforizz.flutter_module.R$attr: int placeholderActivityName
+com.inforizz.flutter_module.R$color: int secondary_text_default_material_light
+com.inforizz.flutter_module.R$styleable: int[] FontFamilyFont
+com.inforizz.flutter_module.R$styleable: int ColorStateListItem_android_alpha
+com.inforizz.flutter_module.R$id: int tag_transition_group
+com.inforizz.flutter_module.R$attr: int secondaryActivityAction
+com.inforizz.flutter_module.R$dimen: int notification_top_pad
+com.inforizz.flutter_module.R$id: int notification_main_column_container
+com.inforizz.flutter_module.R$id: int rtl
+com.inforizz.flutter_module.R$id: int action_container
+com.inforizz.flutter_module.R$id: int tag_state_description
+com.inforizz.flutter_module.R$dimen: int compat_button_inset_vertical_material
+com.inforizz.flutter_module.R$attr: int fontProviderQuery
+com.inforizz.flutter_module.R$styleable: int GradientColorItem_android_offset
+com.inforizz.flutter_module.R$attr: int clearTop
+com.inforizz.flutter_module.R$dimen: int notification_right_side_padding_top
+com.inforizz.flutter_module.R$id: int forever
+com.inforizz.flutter_module.R$string: int status_bar_notification_info_overflow
+com.inforizz.flutter_module.R$styleable: int Capability_shortcutMatchRequired
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_22
+com.inforizz.flutter_module.R$color: int ripple_material_light
+com.inforizz.flutter_module.R$attr: int splitLayoutDirection
+com.inforizz.flutter_module.R$layout: int notification_template_custom_big
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_android_fontWeight
+com.inforizz.flutter_module.R$style: int TextAppearance_Compat_Notification_Info
+com.inforizz.flutter_module.R$styleable: int ActivityRule_alwaysExpand
+com.inforizz.flutter_module.R$dimen: int notification_main_column_padding_top
+com.inforizz.flutter_module.R$dimen: int compat_button_inset_horizontal_material
+com.inforizz.flutter_module.R$dimen: int notification_small_icon_background_padding
+com.inforizz.flutter_module.R$styleable: int[] Capability
+com.inforizz.flutter_module.R$style: int Widget_Compat_NotificationActionContainer
+com.inforizz.flutter_module.R$styleable: int FontFamily_fontProviderPackage
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_startColor
+com.inforizz.flutter_module.R$dimen: int notification_content_margin_start
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_30
+com.inforizz.flutter_module.R$styleable: int SplitPairRule_splitRatio
+com.inforizz.flutter_module.R$style: int TextAppearance_Compat_Notification_Time
+com.inforizz.flutter_module.R$styleable: int ActivityFilter_activityName
+com.inforizz.flutter_module.R$attr: int ttcIndex
+com.inforizz.flutter_module.R$drawable: int notification_bg_low_pressed
+com.inforizz.flutter_module.R$drawable: int notification_template_icon_low_bg
+com.inforizz.flutter_module.R$styleable: int ColorStateListItem_android_color
+com.inforizz.flutter_module.R$drawable: int notification_bg_low
+com.inforizz.flutter_module.R$attr: int fontProviderPackage
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_25
+com.inforizz.flutter_module.R$styleable: int SplitPlaceholderRule_splitRatio
+com.inforizz.flutter_module.R$dimen: int compat_notification_large_icon_max_height
+com.inforizz.flutter_module.R$layout: int notification_template_part_chronometer
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_28
+com.inforizz.flutter_module.R$styleable: int FontFamilyFont_android_ttcIndex
+com.inforizz.flutter_module.R$integer: int status_bar_notification_info_maxnum
+com.inforizz.flutter_module.R$id: int accessibility_custom_action_27
+com.inforizz.flutter_module.R$id: int ltr
+com.inforizz.flutter_module.R$styleable: int GradientColor_android_centerColor
+com.inforizz.flutter_module.R$id: int tag_unhandled_key_listeners
+com.inforizz.flutter_module.R$id: int action_text
+com.inforizz.flutter_module.R$string: R$string()
+com.inforizz.flutter_module.R: R()
+io.flutter.plugins.GeneratedPluginRegistrant: GeneratedPluginRegistrant()
+com.inforizz.flutter_module.R$attr: R$attr()
+com.inforizz.flutter_module.R$layout: R$layout()
+com.inforizz.flutter_module.R$dimen: R$dimen()
+com.inforizz.flutter_module.R$style: R$style()
+com.inforizz.flutter_module.R$styleable: R$styleable()
+com.inforizz.flutter_module.R$color: R$color()
+com.inforizz.flutter_module.R$integer: R$integer()
+com.inforizz.flutter_module.R$drawable: R$drawable()
+com.inforizz.flutter_module.R$id: R$id()
+io.flutter.plugins.GeneratedPluginRegistrant: void registerWith(io.flutter.embedding.engine.FlutterEngine)
