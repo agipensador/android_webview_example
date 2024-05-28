@@ -1,7 +1,11 @@
 package com.inforizz.webviewandroid.core.presentation.screens
 
 import android.net.Uri
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
@@ -21,7 +25,7 @@ fun HomeScreen(navController: NavHostController) {
         ButtonData(
             text = "Notícias",
             color = Color(0xFF800000),
-            url = "https://g1.globo.com/"
+            url = "previous-quince.surge.sh"
         ),
         ButtonData(
             text = "Ajude o RS",
